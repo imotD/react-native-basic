@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Image, Text, TextInput, View} from 'react-native';
 
 const App = () => {
@@ -10,12 +10,14 @@ const App = () => {
       <Photo />
       <Homes />
       <TextInput style={{borderWidth: 1}} />
+      <Box />
+      <Images />
     </View>
   );
 };
 
 const Homes = () => {
-  return <Text>Ini Adalah Text dari beda komponen</Text>;
+  return <Text>Ini Component dari Fungsional Component</Text>;
 };
 
 const Photo = () => {
@@ -28,5 +30,24 @@ const Photo = () => {
     />
   );
 };
+class Box extends Component {
+  render() {
+    return <Text>Ini Component dari Class Component</Text>;
+  }
+}
+
+class Images extends Component {
+  render() {
+    return (
+      <View>
+        <Image
+          source={{uri: 'https://i.vimeocdn.com/portrait/58832_300x300.jpg'}}
+          style={{width: 100, height: 100, borderRadius: 50}}
+        />
+        <Text>Component Image</Text>
+      </View>
+    );
+  }
+}
 
 export default App;
