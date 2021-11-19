@@ -1,9 +1,38 @@
 import React, {Component} from 'react';
-import {Button, Text, Image, TextInput, View} from 'react-native';
+import {StyleSheet, Button, Text, Image, TextInput, View} from 'react-native';
 
 const App = () => {
-  return <HackerComponent />;
+  return <StyleBeginsComponent />;
 };
+
+const StyleBeginsComponent = () => {
+  return (
+    <View>
+      <Text style={styles.text}>Hellow World</Text>
+      <View
+        style={{
+          width: 100,
+          height: 100,
+          backgroundColor: 'blue',
+          borderWidth: 2,
+          borderColor: 'red',
+          marginTop: 20,
+          marginLeft: 30,
+        }}
+      />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: 'tomato',
+    marginLeft: 20,
+    marginTop: 40,
+  },
+});
 
 const HackerComponent = () => {
   return (
