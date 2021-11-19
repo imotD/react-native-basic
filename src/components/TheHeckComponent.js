@@ -11,8 +11,21 @@ const TheHeckComponent = () => {
       <Background />
       <Profile />
       <Field />
-      <View style={{marginTop: 100}}>
-        <Button title="Sign In" style={{height: 100}} color="#FF3D00" />
+      <View
+        style={{
+          marginTop: 90,
+          paddingVertical: 20,
+          backgroundColor: 'red',
+        }}>
+        <Text
+          style={{
+            fontSize: 14,
+            fontWeight: '400',
+            color: 'white',
+            textAlign: 'center',
+          }}>
+          Sign In
+        </Text>
       </View>
     </View>
   );
