@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Button, Text, Image, TextInput, View} from 'react-native';
+import Banner from './assets/banner.png';
 
 const App = () => {
   return <StyleBeginsComponent />;
@@ -11,15 +12,39 @@ const StyleBeginsComponent = () => {
       <Text style={styles.text}>Hellow World</Text>
       <View
         style={{
-          width: 100,
-          height: 100,
-          backgroundColor: 'blue',
-          borderWidth: 2,
-          borderColor: 'red',
-          marginTop: 20,
-          marginLeft: 30,
-        }}
-      />
+          padding: 12,
+          backgroundColor: '#f2f2f2',
+          width: 212,
+          borderRadius: 8,
+        }}>
+        <Image
+          source={Banner}
+          style={{width: 188, height: 107, borderRadius: 8}}
+        />
+        <Text style={{fontSize: 14, fontWeight: 'bold', marginTop: 12}}>
+          Promo Atozgo November
+        </Text>
+        <Text style={{fontSize: 12, fontWeight: '300', marginTop: 12}}>
+          Khusus Jakarta Pusat
+        </Text>
+        <View
+          style={{
+            marginTop: 10,
+            paddingVertical: 5,
+            borderRadius: 25,
+            backgroundColor: 'orange',
+          }}>
+          <Text
+            style={{
+              fontSize: 14,
+              fontWeight: '400',
+              color: 'white',
+              textAlign: 'center',
+            }}>
+            Pakai Vocher
+          </Text>
+        </View>
+      </View>
     </View>
   );
 };
