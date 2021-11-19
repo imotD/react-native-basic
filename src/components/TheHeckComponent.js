@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Button, Text, Image, TextInput, View} from 'react-native';
 
-const HackerComponent = () => {
+const TheHeckComponent = () => {
   return (
     <View
       style={{
@@ -83,4 +83,4 @@ class Background extends Component {
   }
 }
 
-export default HackerComponent;
+export default TheHeckComponent;

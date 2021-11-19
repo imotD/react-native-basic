@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, Image, View} from 'react-native';
 import Banner from './assets/banner.png';
 
-const StyleBeginsComponent = () => {
+const TheStyleComponent = () => {
   return (
     <View>
       <Text style={styles.text}>Hellow World</Text>
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StyleBeginsComponent;
+export default TheStyleComponent;

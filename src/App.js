@@ -1,7 +1,8 @@
 import React from 'react';
 import {View, ScrollView} from 'react-native';
-import HackerComponent from './HackerComponent';
-import StyleBeginsComponent from './StyleBeginsComponent';
+import TheHeckComponent from './components/TheHeckComponent';
+// import StyleBeginsComponent from './StyleBeginsComponent';
+// import MateriFlexBox from './components/TheFlexBox';
 
 const logo = {
   uri: 'https://reactnative.dev/img/tiny_logo.png',
@@ -12,8 +13,7 @@ const App = () => {
   return (
     <ScrollView>
       <View>
-        <StyleBeginsComponent />
-        <HackerComponent />
+        <TheHeckComponent />
       </View>
     </ScrollView>
   );
