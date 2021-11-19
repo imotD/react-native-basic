@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import {Button, Text, Image, TextInput, View} from 'react-native';
 
 const App = () => {
+  return <HackerComponent />;
+};
+
+const HackerComponent = () => {
   return (
     <View
       style={{
