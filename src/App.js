@@ -8,9 +8,9 @@ const App = () => {
   return (
     <ScrollView>
       <View>
-        <TheHeckComponent />
+        {/* <TheHeckComponent /> */}
         <TheFlexBox />
-        <TheStyleComponent />
+        {/* <TheStyleComponent /> */}
       </View>
     </ScrollView>
   );
