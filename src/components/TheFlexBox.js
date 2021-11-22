@@ -24,7 +24,7 @@ class TheFlexBox extends Component {
   }
 
   componentWillUnmount() {
-    console.log('==> componentWillUnmount');
+    console.log('==>  componentWillUnmount');
   }
 
   render() {
