@@ -1,9 +1,10 @@
-import React from 'react';
-import {View, ScrollView} from 'react-native';
-import TheHeckComponent from './components/TheHeckComponent';
-import TheStyleComponent from './components/TheStyleComponent';
-import TheFlexBox from './components/TheFlexBox';
-import PropsDinamis from './pages/PropsDinamis';
+import React from "react";
+import { View, ScrollView } from "react-native";
+import TheHeckComponent from "./components/TheHeckComponent";
+import TheStyleComponent from "./components/TheStyleComponent";
+import TheFlexBox from "./components/TheFlexBox";
+import PropsDinamis from "./pages/PropsDinamis";
+import StateDinamis from "./pages/StateDinamis";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <View>
         {/* <TheHeckComponent /> */}
         {/* <TheFlexBox /> */}
-        <PropsDinamis />
+        {/* <PropsDinamis /> */}
+        <StateDinamis />
         {/* <TheStyleComponent /> */}
       </View>
     </ScrollView>
