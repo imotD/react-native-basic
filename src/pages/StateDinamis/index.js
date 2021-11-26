@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Component, useState, number } from "react";
 import { Button, StyleSheet, Text, View } from "react-native";
 
 const Counter = () => {
@@ -13,6 +13,25 @@ const Counter = () => {
   );
 };
 
+class CounterClass extends Component {
+  state = {
+    number: 0
+  };
+  render() {
+    return (
+      <View>
+        <Text>
+          {this.state.number}
+        </Text>
+        <Button
+          title="tambah"
+          onPress={() => this.setState({ number: this.state.number + 1 })}
+        />
+      </View>
+    );
+  }
+}
+
 export default function StateDinamis() {
   return (
     <View style={styles.wrapper}>
@@ -20,7 +39,12 @@ export default function StateDinamis() {
         Materi Component Dinamis dengan State
       </Text>
       <Text />
+      <Text>
+        {number}
+      </Text>
+      <Button title="tambah" onPress={() => setNumber(number + 1)} />
       <Counter />
+      <CounterClass />
     </View>
   );
 }
